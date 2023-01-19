@@ -418,7 +418,7 @@ img {
   background-color: #F5F4FA;
 }
 
-.box-com {
+.comanda {
   background: rgb(255, 255, 255);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -532,7 +532,7 @@ img {
   fill: currentColor;
 }
 
-.klient__box {
+.klient {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -986,6 +986,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--mol-color);
   text-decoration: none;
 }
 
