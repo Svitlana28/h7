@@ -174,6 +174,27 @@ img {
   color: var(--mail-color);
 }
 
+.form__button {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  color: var(--mail-color);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  border: 0;
+  background-color: var(--mol-color);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -199,48 +220,6 @@ img {
 .artik:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-  gap: 8px;
-}
-
-.button-link:hover,
-.button-link:focus {
-  color: var(--mail-color);
-  background-color: var(--focus-color);
-  border-color: #2196F3;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.button-link {
-  display: block;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  background: #F5F4FA;
-  border-radius: 4px;
-  border: 0;
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .robotu-link {
@@ -632,27 +611,6 @@ img {
   margin-bottom: 20px;
 }
 
-.footer__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  padding-left: 28px;
-  padding-top: 10px;
-  text-align: center;
-  margin-left: 12px;
-  margin-top: auto;
-  width: 200px;
-  height: 50px;
-  background-color: var(--focus-color);
-  border: 0;
-  cursor: pointer;
-  color: var(--mail-color);
-}
-
 .maps {
   line-height: 1.71;
   color: var(--mail-color);
@@ -703,6 +661,11 @@ img {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-links:hover, .footer-links:focus {
+  background-color: var(--focus-color);
+  color: var(--mail-color);
+  border-radius: 50%;
+}
 
 .cons {
   display: -webkit-box;
@@ -734,13 +697,6 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--mail-color);
-}
-
-.footer-links:hover,
-.footer-links:focus {
-  background-color: var(--focus-color);
-  color: var(--mail-color);
-  border-radius: 50%;
 }
 
 .zag-soc {
@@ -1001,6 +957,10 @@ img {
   padding-bottom: 25px;
 }
 
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+
 .heder-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1013,22 +973,6 @@ img {
 
 .header.link.current {
   color: var(--mol-color);
-}
-
-.accent__current {
-  color: var(--mol-color);
-}
-
-.logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: var(--mol-color);
-  text-decoration: none;
 }
 
 .heder {
@@ -1071,11 +1015,6 @@ img {
   color: var(--meil-color);
 }
 
-.link:hover,
-.link:focus {
-  color: var(--mol-color);
-}
-
 .kont {
   margin-right: 344px;
 }
@@ -1091,6 +1030,9 @@ img {
 
 .link {
   text-decoration: none;
+}
+.link:hover, .link:focus {
+  color: var(--mol-color);
 }
 
 .icon-meil {
@@ -1120,14 +1062,7 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 10px;
 }
-
-.meil:hover,
-.meil:focus {
-  fill: var(--focus-color);
-}
-
-.tel:hover,
-.tel:focus {
+.tel:hover, .tel:focus {
   fill: var(--focus-color);
 }
 
@@ -1146,6 +1081,9 @@ img {
   color: var(--mel-color);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.meil:hover, .meil:focus {
+  fill: var(--focus-color);
 }
 
 .hero {
