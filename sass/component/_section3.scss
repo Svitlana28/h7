@@ -7,7 +7,7 @@
     
 }
 
-.diy__foto {
+.diy__foto {flex-basis: calc((100% - 2 * 30px) / 3);
     display: flex;
     gap: 30px;
     margin: auto;
@@ -19,7 +19,8 @@
     overflow: hidden;
 }
 
-.diy__overley{display: flex;
+.diy__overley{
+display: flex;
 align-items: center;
 justify-content: center;
 position: absolute;

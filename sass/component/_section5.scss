@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: calc((100%-5*30px)6);
+    flex-basis: calc((100% - 5 * 30px) / 6);
     width: 170px;
     height: 92px;
     border: 1px solid var(--socset-color);
